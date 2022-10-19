@@ -30,13 +30,13 @@ const enviar =  (req) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: "unilivrecomplexus@gmail.com",
-            pass: "unixvtrnxdgttsvg"
+            user: "",
+            pass: ""
         }
     });
     
     const mailOptions = {
-        from: 'Lucas , <lucas83869@gmail.com>',
+        from: 'Lucas , <>',
         //Lista de emails que você quer enviar (pode cadastrar vários, basta separar por " , ")
         to: 'lucas83869@gmail.com', 
         //Assunto do email
@@ -57,13 +57,13 @@ const enviar =  (req) => {
     const transporter2 = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: "unilivrecomplexus@gmail.com",
-            pass: "unixvtrnxdgttsvg"
+            user: "",
+            pass: ""
         }
     });
     
     const mailOptions2 = {
-        from: 'Lucas , <lucas83869@gmail.com>',
+        from: 'Lucas , <>',
         //Lista de emails que você quer enviar (pode cadastrar vários, basta separar por " , ")
         to: req.body.email, 
         //Assunto do email
